@@ -15,8 +15,9 @@ function winSize(){
 	ww = document.documentElement.clientWidth;
 	wh = document.documentElement.clientHeight;
 	if( ww > 750){
+		ww = 750;
 		canvas.setAttribute('style' , 'margin:0 auto;');
-		canvas.width = 750;
+		canvas.width = ww;
 		canvas.height = wh;
 	}else{
 		canvas.width = ww;
